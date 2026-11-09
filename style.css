@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  color: #1f1b2d;
+}
+
+/* Селекторы элементов */
+h1 {
+  color: #6d28d9;
+}
+
+p {
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 14px;
+  margin: 10px 0;
+}
+
+/* Правила для классов (требование ТЗ: минимум два) */
+.card {
+  border: 2px solid #c4b5fd;
+  padding: 20px;
+  margin-bottom: 20px; /* Видимый внешний промежуток между карточкой и формой */
+  background-color: #ffffff;
+}
+
+.error {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+.result-block {
+  border: 2px solid #22c55e;
+  padding: 15px;
+  margin: 20px 0;
+  background-color: #dcfce7;
+}
+
+/* Селекторы по id */
+#service-form {
+  border: 2px solid #c4b5fd;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+#report-json {
+  border: 1px solid #c4b5fd;
+  padding: 10px;
+  margin: 20px 0;
+  background-color: #f5f3ff;
+}
