@@ -91,7 +91,6 @@ form.addEventListener('submit', function(event) {
 
 const showProgramBtn = document.querySelector('#show-program');
 const programBlock = document.querySelector('#program');
-
 showProgramBtn.addEventListener('click', function() {
   if (!data) return; 
   programBlock.hidden = false;
