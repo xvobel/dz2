@@ -14,6 +14,7 @@ const sourceJson = `{
 }`;
 
 let data;
+
 try {
   data = JSON.parse(sourceJson);
   document.querySelector('#service-form').hidden = false;
