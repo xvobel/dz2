@@ -8,7 +8,6 @@ body {
   color: #1f1b2d;
 }
 
-/* Селекторы элементов */
 h1 {
   color: #6d28d9;
 }
@@ -22,11 +21,10 @@ button {
   margin: 10px 0;
 }
 
-/* Правила для классов (требование ТЗ: минимум два) */
 .card {
   border: 2px solid #c4b5fd;
   padding: 20px;
-  margin-bottom: 20px; /* Видимый внешний промежуток между карточкой и формой */
+  margin-bottom: 20px;
   background-color: #ffffff;
 }
 
@@ -42,7 +40,6 @@ button {
   background-color: #dcfce7;
 }
 
-/* Селекторы по id */
 #service-form {
   border: 2px solid #c4b5fd;
   padding: 20px;
