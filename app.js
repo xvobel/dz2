@@ -71,8 +71,6 @@ form.addEventListener('submit', function(event) {
     jsonBlock.hidden = true;
   } else {
     choiceError.hidden = true;
-
-    // Исправление 1: используем join, чтобы не было лишнего <br> в конце
     const titles = report.items.map(function(item) {
       return item.title;
     });
@@ -85,7 +83,7 @@ form.addEventListener('submit', function(event) {
     resultBlock.hidden = false;
 
     const reportJsonString = JSON.stringify(report);
-    JSON.parse(reportJsonString); // Проверка валидности строки по ТЗ
+    JSON.parse(reportJsonString);
     jsonBlock.textContent = reportJsonString;
     jsonBlock.hidden = false;
   }
@@ -95,9 +93,7 @@ const showProgramBtn = document.querySelector('#show-program');
 const programBlock = document.querySelector('#program');
 
 showProgramBtn.addEventListener('click', function() {
-  // Исправление 2: защита от ошибки, если JSON был повреждён при загрузке
   if (!data) return; 
-  
   programBlock.hidden = false;
   programBlock.innerHTML = data.event.meeting;
 });
